@@ -21,7 +21,6 @@ class recipeRequest{
                 let decoder:JSONDecoder = JSONDecoder()
                 do{
                     let access_resp:recipeResult = try decoder.decode(recipeResult.self,from:json)
-                    print(access_resp)
                     self.result = access_resp
                     callBackClosure()
                 }catch{
