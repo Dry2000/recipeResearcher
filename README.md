@@ -1,7 +1,7 @@
 # アプリ名
 recipeResearcher
 # 対象OS
-iOS 14.5
+iOS 14.5 (ただしXCodeのシミュレータにおいてiPod touch 7th generationでは動作せず。　iPhone7(実機)、iPhoneSE 2th generation(シミュレータ)、iPhone12(シミュレータ)にて動作することは確認済み)
 # 開発環境
 Xcode Version 12.5 (12E262)
 # 言語
