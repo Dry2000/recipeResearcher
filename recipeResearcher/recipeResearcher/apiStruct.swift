@@ -6,12 +6,12 @@
 //
 
 import Foundation
+
+
 struct recipeResult:Codable{
     let result:[rakuten]
 }
-struct categoryResult:Codable{
-    let result:category
-}
+
 struct rakuten:Codable{
     let recipeId:Int
     let recipeTitle:String
@@ -29,6 +29,11 @@ struct rakuten:Codable{
     let recipePublishday:String
     let rank:String
 }
+
+struct categoryResult:Codable{
+    let result:category
+}
+
 struct category:Codable{
     let large:[categories]
     let medium:[categories]!

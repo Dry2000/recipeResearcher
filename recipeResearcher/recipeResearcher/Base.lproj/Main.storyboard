@@ -41,8 +41,8 @@
                                     <action selector="transition:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pyk-Xb-Gha"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cooking_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="gG6-la-bnd">
-                                <rect key="frame" x="0.0" y="830" width="414" height="32"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cooking_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="gG6-la-bnd">
+                                <rect key="frame" x="0.0" y="828" width="414" height="34"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cooking_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="OY1-sh-NYS">
                                 <rect key="frame" x="0.0" y="88" width="414" height="34"/>
@@ -50,14 +50,7 @@
                                     <constraint firstAttribute="height" constant="34" id="5XW-RK-4Ce"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Supported by Rakuten Developers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdW-Em-Ykk">
-                                <rect key="frame" x="81" y="801" width="374" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="レシピリサーチ!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adY-UQ-NFi">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="レシピリサーチ!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adY-UQ-NFi">
                                 <rect key="frame" x="0.0" y="213" width="414" height="82"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="82" id="OUN-lp-SPG"/>
@@ -66,10 +59,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Supported by Rakuten Developers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdW-Em-Ykk">
+                                <rect key="frame" x="40" y="799" width="374" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Zrx-Hx-1W3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="gG6-la-bnd" firstAttribute="top" secondItem="RdW-Em-Ykk" secondAttribute="bottom" constant="8" id="0D3-QA-QOh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dl4-0U-PLb" secondAttribute="trailing" constant="20" id="0PE-OE-a7b"/>
                             <constraint firstItem="gG6-la-bnd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8SL-s0-HYl"/>
                             <constraint firstItem="adY-UQ-NFi" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Az0-5G-rcW"/>
@@ -80,7 +83,9 @@
                             <constraint firstItem="dl4-0U-PLb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TeJ-nO-cpf"/>
                             <constraint firstItem="OY1-sh-NYS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="W6R-mL-dgs"/>
                             <constraint firstItem="dl4-0U-PLb" firstAttribute="top" secondItem="adY-UQ-NFi" secondAttribute="bottom" constant="90.5" id="WTH-Qc-Fqb"/>
+                            <constraint firstItem="RdW-Em-Ykk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="a0h-9R-ifI"/>
                             <constraint firstItem="gG6-la-bnd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ebw-hm-8dP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RdW-Em-Ykk" secondAttribute="trailing" constant="-20" id="jdM-oM-M1H"/>
                             <constraint firstItem="adY-UQ-NFi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jki-R8-yXi"/>
                             <constraint firstItem="adY-UQ-NFi" firstAttribute="top" secondItem="OY1-sh-NYS" secondAttribute="bottom" constant="91" id="ram-kg-diU"/>
                             <constraint firstItem="OY1-sh-NYS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wbz-1f-na0"/>
@@ -88,7 +93,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="rYq-DM-gl6" propertyAccessControl="none"/>
                     <connections>
-                        <segue destination="21C-cC-Ur8" kind="push" identifier="toCategoryViewController" id="zx8-tO-LpC"/>
+                        <segue destination="21C-cC-Ur8" kind="show" identifier="toCategoryViewController" id="zx8-tO-LpC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -120,7 +125,7 @@
                     <navigationItem key="navigationItem" id="dGN-45-yYt"/>
                     <connections>
                         <outlet property="categoryList" destination="DaB-Hq-Flx" id="Wg5-v7-uba"/>
-                        <segue destination="E8x-iY-lBG" kind="push" identifier="toRecipeListViewController" id="E6j-50-aly"/>
+                        <segue destination="E8x-iY-lBG" kind="show" identifier="toRecipeListViewController" id="E6j-50-aly"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mC4-qL-Nvg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -152,18 +157,31 @@
                                             <rect key="frame" x="0.0" y="0.0" width="409" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t3x-UR-QNC">
-                                                    <rect key="frame" x="-69" y="8" width="240" height="128"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t3x-UR-QNC">
+                                                    <rect key="frame" x="0.0" y="8" width="212" height="128"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BkR-sC-QZC">
-                                                    <rect key="frame" x="179" y="4" width="128" height="120"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BkR-sC-QZC">
+                                                    <rect key="frame" x="220" y="4" width="189" height="120"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="189" id="rtZ-jl-CMy"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="BkR-sC-QZC" firstAttribute="top" secondItem="Iie-xl-sYa" secondAttribute="top" constant="4" id="0n7-J3-Lmu"/>
+                                                <constraint firstItem="BkR-sC-QZC" firstAttribute="leading" secondItem="Iie-xl-sYa" secondAttribute="leading" constant="220" id="3Yw-Fg-gL2"/>
+                                                <constraint firstItem="t3x-UR-QNC" firstAttribute="top" secondItem="Iie-xl-sYa" secondAttribute="topMargin" id="4HV-FG-6kQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="t3x-UR-QNC" secondAttribute="bottom" constant="-8" id="H39-JM-TK5"/>
+                                                <constraint firstItem="t3x-UR-QNC" firstAttribute="leading" secondItem="Iie-xl-sYa" secondAttribute="leading" id="Ly6-0H-tOq"/>
+                                                <constraint firstAttribute="trailing" secondItem="BkR-sC-QZC" secondAttribute="trailing" id="ML3-eR-685"/>
+                                                <constraint firstItem="BkR-sC-QZC" firstAttribute="leading" secondItem="t3x-UR-QNC" secondAttribute="trailing" constant="8" id="VlH-Nh-8Hv"/>
+                                                <constraint firstItem="BkR-sC-QZC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="t3x-UR-QNC" secondAttribute="trailing" constant="8" symbolic="YES" id="hiP-mj-Lfq"/>
+                                                <constraint firstAttribute="trailing" secondItem="BkR-sC-QZC" secondAttribute="trailing" id="oH0-Ca-uEX"/>
+                                                <constraint firstItem="BkR-sC-QZC" firstAttribute="centerY" secondItem="Iie-xl-sYa" secondAttribute="centerY" id="qDj-D4-Kku"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="409" height="128"/>
                                     </collectionViewCell>
@@ -181,8 +199,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="bEd-jw-KcE"/>
                     <connections>
-                        <outlet property="recipeImages" destination="Iek-77-QXu" id="gBM-2L-xw9"/>
-                        <segue destination="4F1-Js-gid" kind="push" identifier="toRecipeInfoViewController" id="I1h-3O-Cv9"/>
+                        <outlet property="recipeOverview" destination="Iek-77-QXu" id="gBM-2L-xw9"/>
+                        <segue destination="4F1-Js-gid" kind="show" identifier="toRecipeInfoViewController" id="I1h-3O-Cv9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N1f-Wd-sMf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -234,7 +252,7 @@
                         <outlet property="recipeImage" destination="l7F-ov-Dz1" id="gbK-TP-neQ"/>
                         <outlet property="recipeMaterial" destination="a6u-e7-zdu" id="7V4-wy-6fm"/>
                         <outlet property="recipeName" destination="IYs-i0-zT9" id="4nZ-sV-wRE"/>
-                        <segue destination="djc-cN-e44" kind="push" identifier="toOriginalPage" id="Me1-AF-RXl"/>
+                        <segue destination="djc-cN-e44" kind="show" identifier="toOriginalPage" id="Me1-AF-RXl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="72q-I7-RyA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -10,29 +10,16 @@ import UIKit
 
 class recipeListViewController:UIViewController,UICollectionViewDelegate,UICollectionViewDataSource{
     var recipeList:recipeResult?
-    var timer:Timer!
     var tappedPath :Int!
-    @IBOutlet weak var recipeImages: UICollectionView!
+    @IBOutlet weak var recipeOverview: UICollectionView!
     override func viewDidLoad() {
-        recipeImages.delegate = self
-        recipeImages.dataSource = self
-        recipeImages.isUserInteractionEnabled = true
-        recipeImages.allowsSelection = true
-        //print(recipeList)
-        timer = Timer.scheduledTimer(withTimeInterval:1, repeats: true, block: {_ in
-            self.checkData()
-        })
+        recipeOverview.delegate = self
+        recipeOverview.dataSource = self
+        recipeOverview.isUserInteractionEnabled = true
+        recipeOverview.allowsSelection = true
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: self.view.frame.width, height: 120)
-        recipeImages.collectionViewLayout = layout
-    }
-    func checkData(){
-        if recipeList == nil{
-            return
-        }
-        timer.invalidate()
-        recipeImages.reloadData()
-        print(recipeList)
+        layout.itemSize = CGSize(width: self.view.frame.width, height: 180)
+        recipeOverview.collectionViewLayout = layout
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if recipeList == nil{
@@ -78,14 +65,4 @@ class recipeListViewController:UIViewController,UICollectionViewDelegate,UIColle
                 
             }
         }
-    func getImageByUrl(url: String) -> UIImage{
-        let url = URL(string: url)
-        do {
-            let data = try Data(contentsOf: url!)
-            return UIImage(data: data)!
-        } catch let err {
-            print("Error : \(err.localizedDescription)")
-        }
-        return UIImage()
-    }
 }
