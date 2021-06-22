@@ -9,7 +9,7 @@ Swift
 # 機能概要
 
 # 画面概要
-![titleImage](readmeImage/titleView.PNG)
+![titleImage](readmeImages/titleView.PNG)
 # 使用しているAPI
 
 # コンセプト
